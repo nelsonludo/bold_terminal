@@ -1,0 +1,152 @@
+
+/*styles looks*/
+#big_look3{
+    margin-left: 7%;
+}
+.big_box{
+    display: flex;
+}
+
+.premier{
+    margin-right: 5px;
+    width: 600px;
+}
+.premier_s{
+    margin-right: 5px;
+    width: 600px;
+    margin-left:24%;
+}
+.premier_s img{
+    width: 100%;
+}
+.premier img{
+    width: 100%;
+}
+/*styles teintes*/
+#big_teintes{
+    display: flex;
+    flex-direction: column;
+}
+#big_teintes a,.levres1 a{
+    text-decoration: none;
+    color: black;
+}
+.teintes1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mini_teintes{
+    width: 250px;
+    height: 230px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.mini_teintes2{
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.hov{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    left: 0;
+    top: 0;
+    background-color: rgba(240, 248, 255, 0.534);
+    opacity: 0;
+}
+.hov span{
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    text-transform: uppercase;
+}
+.hov:hover {
+    opacity: 1;
+}
+.mini_teintes img{
+    width: 100%;
+    overflow: hidden;
+}
+.mini_teintes2 img{
+    width: 100%;
+    overflow: hidden;
+}
+/*styles levres*/
+.levres1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+.mini_levres{
+    background-image: url(images/pink_lady.jpg);
+    background-size: cover;
+    background-position:center ;
+    width: 150px;
+    height: 300px;
+    margin: 2px;
+    position: relative;
+}
+.levres_hov{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(images/pink.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    text-align: center;
+}
+.mini_levres_link{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    text-transform: uppercase;
+}
+.levres_hov:hover {
+    opacity: 1;
+}
+
+/*responsive levres*/
+@media screen and (max-width: 800px){
+    .mini_levres{
+        width: 180px;
+    }
+}
+/*responsive looks*/
+@media screen and (max-width:451px) {
+    .big_box {
+        display: flex;
+        flex-direction: column;
+    }
+    .premier {
+        margin-right: 5px;
+        width: 275px;
+    }
+    .premier_s {
+        margin-right: 5px;
+        width: 275px;
+        margin-left: 0%;
+    }
+    #big_look3 {
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width: 376px){
+    #big_look3 {
+        margin-left: 13%;
+    }
+}
+@media screen and (max-width: 321px){
+    #big_look3 {
+        margin-left: 6%;
+    }
+}
